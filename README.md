@@ -4,11 +4,13 @@
 
 ## Descrption
 第一个版本相对较为简单
+
 LLImageTabBarController 图片式TabBar
-* 支持点击果冻动画
-* 支持不同的tabbar image
 
 未来将实现不同风格TabBar
+
+* 支持点击果冻动画
+* 支持不同的tabbar image
 
 ## Usage
 ```swift
