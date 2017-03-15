@@ -3,7 +3,7 @@
 <img src="https://github.com/LvJianfeng/LLTabBarController/blob/master/demo.png" width="400" align="center"> 
 
 ## Descrption
-第一个版本相对较为简单
+第一个版本相对较为简单，具体效果请运行Demo
 
 LLImageTabBarController 图片式TabBar
 
