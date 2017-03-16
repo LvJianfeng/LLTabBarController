@@ -1,13 +1,11 @@
 # 图片式 LLImageTabBarController
 
-<img src="https://github.com/LvJianfeng/LLTabBarController/blob/master/demo.png" width="400" align="center"> 
+<img src="https://github.com/LvJianfeng/LLTabBarController/blob/master/demo.gif" width="400" align="center"> 
 
 ## Descrption
 第一个版本相对较为简单，具体效果请运行Demo
 
 LLImageTabBarController 图片式TabBar
-
-未来将实现不同风格TabBar
 
 * 支持点击果冻动画
 * 支持不同的tabbar image
