@@ -9,6 +9,8 @@ LLImageTabBarController 图片式TabBar
 
 * 支持点击果冻动画
 * 支持不同的tabbar image
+* 支持用户二次点击，开发自定义点击事件
+* 支持用户二次点击，修改tabBar显示图
 
 ## Usage
 ```swift
@@ -31,6 +33,19 @@ var lineColor: UIColor = UIColor.init(red: 212.0/255.0, green: 212.0/255.0, blue
 
 /// TabBar数据 ([图片名称], [各个根控制器])
 var tabBarData: ([String]?, [UIViewController]?)?
+
+```
+
+## 2017.03.17新增协议
+```swift
+/// 如果需要实现点击回调，注意添加（不需要则不用添加啦）
+class OneTableViewController: UITableViewController, LLTabBarControllerProtocol
+/// 代理
+func tapTabBarButton(button: UIButton) {
+    if isViewLoaded {
+        tableView.scrollToRow(at: IndexPath.init(row: 20, section: 0), at: .top, animated: true)
+    }
+}
 
 ```
 
