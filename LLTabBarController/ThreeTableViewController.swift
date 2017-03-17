@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ThreeTableViewController: UITableViewController {
+class ThreeTableViewController: UITableViewController, LLTabBarControllerProtocol {
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,4 +38,8 @@ class ThreeTableViewController: UITableViewController {
         return cell
     }
     
+    func tapTabBarButton(button: UIButton) {
+        print("ThreeVC:\(button.tag)")
+    }
+
 }

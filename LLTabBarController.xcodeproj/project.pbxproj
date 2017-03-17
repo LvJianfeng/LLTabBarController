@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F48F8DC1E7B8BED00011ABE /* LLTabBarControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F48F8DB1E7B8BED00011ABE /* LLTabBarControllerProtocol.swift */; };
 		3F6AD8C11E77C6CB000A871C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6AD8C01E77C6CB000A871C /* AppDelegate.swift */; };
 		3F6AD8C31E77C6CB000A871C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6AD8C21E77C6CB000A871C /* ViewController.swift */; };
 		3F6AD8C61E77C6CB000A871C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F6AD8C41E77C6CB000A871C /* Main.storyboard */; };
@@ -26,6 +27,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3F48F8DB1E7B8BED00011ABE /* LLTabBarControllerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LLTabBarControllerProtocol.swift; sourceTree = "<group>"; };
 		3F6AD8BD1E77C6CB000A871C /* LLTabBarController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LLTabBarController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F6AD8C01E77C6CB000A871C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F6AD8C21E77C6CB000A871C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				3F6AD8D51E77D2EB000A871C /* LLImageTabBarController.swift */,
+				3F48F8DB1E7B8BED00011ABE /* LLTabBarControllerProtocol.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -185,6 +188,7 @@
 			files = (
 				3F97C39B1E77E562004BB7D9 /* ThreeTableViewController.swift in Sources */,
 				3F97C3971E77E523004BB7D9 /* TwoTableViewController.swift in Sources */,
+				3F48F8DC1E7B8BED00011ABE /* LLTabBarControllerProtocol.swift in Sources */,
 				3F97C39F1E77E584004BB7D9 /* FourTableViewController.swift in Sources */,
 				3F97C3A31E77EC0A004BB7D9 /* FiveTableViewController.swift in Sources */,
 				3F6F7E531E77E29500892100 /* OneTableViewController.swift in Sources */,

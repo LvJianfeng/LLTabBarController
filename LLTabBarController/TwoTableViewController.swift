@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TwoTableViewController: UITableViewController {
+class TwoTableViewController: UITableViewController, LLTabBarControllerProtocol {
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "CELL")
@@ -35,5 +35,9 @@ class TwoTableViewController: UITableViewController {
         cell.textLabel?.text = "TwoVC--->\(indexPath.row)"
         
         return cell
+    }
+    
+    func tapTabBarButton(button: UIButton) {
+        print("TwoVC:\(button.tag)")
     }
 }

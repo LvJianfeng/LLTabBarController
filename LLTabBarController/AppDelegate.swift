@@ -19,12 +19,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         window = UIWindow.init(frame: UIScreen.main.bounds)
         let tabBarViewController: LLImageTabBarController = LLImageTabBarController()
-        
         // 线条显示控制
         // tabBarViewController.isShowLine = true
         
         // 注意了 选中图片的命名请在非选中图片后加_selected  例如:未选中ask.png  选中ask_selected.png
         // tabBarData使用需要在其他自定义参数后进行赋值 哈哈
+        // TabBar数据 ([图片名称], [根控制器])
         tabBarViewController.tabBarData = (["home", "weitao", "ask", "cart", "my"], [OneTableViewController(), TwoTableViewController(), ThreeTableViewController(), FourTableViewController(), FiveTableViewController()])
         window?.rootViewController = tabBarViewController
         window?.makeKeyAndVisible()

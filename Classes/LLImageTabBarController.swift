@@ -10,13 +10,15 @@ import UIKit
 
 class LLImageTabBarController: UITabBarController {
     
+    var llTabBarDelegate: LLTabBarControllerProtocol?
+    
     /// 是否显示线条
     var isShowLine: Bool = false
     
     /// 线条颜色
     var lineColor: UIColor = UIColor.init(red: 212.0/255.0, green: 212.0/255.0, blue: 212.0/255.0, alpha: 1.0)
     
-    /// TabBar数据 ([图片名称], [各个根控制器])
+    /// TabBar数据 ([图片名称], [各个根控制器], [Controller类名称])
     var tabBarData: ([String]?, [UIViewController]?)? {
         didSet {
             // Data
@@ -95,17 +97,27 @@ extension LLImageTabBarController {
         // Animation
         animationTouchButton(sender)
         
-        if sender.isSelected {
+        if !sender.isSelected {
+            // Reset last button state
+            selectedButton?.isSelected = false
+            // Set sender
+            sender.isSelected = true
+            // Set last button
+            selectedButton = sender
+            // Index
+            selectedIndex = sender.tag
+        }
+        
+        // Tap
+        guard ((tabBarData?.1?[sender.tag] as? LLTabBarControllerProtocol?) != nil) else {
             return
         }
-        // Reset last button state
-        selectedButton?.isSelected = false
-        // Set sender
-        sender.isSelected = true
-        // Set last button
-        selectedButton = sender
-        // Index
-        selectedIndex = sender.tag
+        
+        if let isProtocol = tabBarData?.1?[sender.tag] as? LLTabBarControllerProtocol? {
+            llTabBarDelegate = isProtocol
+        }
+        
+        llTabBarDelegate?.tapTabBarButton(button: sender)
     }
 }
 

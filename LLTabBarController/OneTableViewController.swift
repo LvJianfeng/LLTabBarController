@@ -8,8 +8,10 @@
 
 import UIKit
 
-class OneTableViewController: UITableViewController {
-        
+class OneTableViewController: UITableViewController, LLTabBarControllerProtocol {
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "CELL")
@@ -36,5 +38,9 @@ class OneTableViewController: UITableViewController {
         cell.textLabel?.text = "OneVC--->\(indexPath.row)"
 
         return cell
+    }
+    
+    func tapTabBarButton(button: UIButton) {
+        print("OneVC:\(button.tag)")
     }
 }
