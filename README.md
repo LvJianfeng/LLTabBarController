@@ -1,6 +1,6 @@
 # 图片式 LLImageTabBarController
 
-<img src="https://github.com/LvJianfeng/LLTabBarController/blob/master/demo.gif" width="400" align="center"> 
+<img src="https://github.com/LvJianfeng/LLTabBarController/blob/master/screen.gif" width="400" align="center"> 
 
 ## Descrption
 第一个版本相对较为简单，具体效果请运行Demo
@@ -36,7 +36,7 @@ var tabBarData: ([String]?, [UIViewController]?)?
 
 ```
 
-## 2017.03.17新增协议
+### 2017.03.17新增协议
 ```swift
 /// 如果需要实现点击回调，注意添加（不需要则不用添加啦）
 class OneTableViewController: UITableViewController, LLTabBarControllerProtocol
